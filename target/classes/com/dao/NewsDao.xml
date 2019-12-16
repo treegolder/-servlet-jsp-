@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.dao.NewsDao">
+    <select id="findAll" resultType="com.entity.News">
+        select * from news ORDER BY id desc
+    </select>
+    <insert id="saveNews" parameterType="com.entity.News">
+        insert into news(title,content) values(#{title},#{content})
+    </insert>
+    <update id="updateNews" parameterType="com.entity.News">
+        update news set title=#{title},content=#{content} where id=#{id}
+    </update>
+    <delete id="deleteNews" parameterType="int">
+        delete  from news where id = #{nid}
+    </delete>
+    <select id="getNews" resultType="com.entity.News">
+    SELECT * from news where id=#{nid}
+    </select>
+
+</mapper>

@@ -254,58 +254,29 @@
 
 				</div>
 			</div>
-			<div class="services-moksrow">
-				<c:forEach begin="0" end="5" items="${news}" var="n" varStatus="s">
-					<div class="col-xs-4 services-grids-w3l">
-						<div class="servi-shadow">
-							<span class="fa fa-bullhorn icon" aria-hidden="true"></span>
-							<h4><a href="/NewsPage?nid=${n.id}">${n.title}</a></h4>
+
+            <div class="services-moksrow">
+                <c:forEach begin="0" end="4" items="${news}" var="n" varStatus="s">
+
+                <div class="col-xs-4 services-grids-w3l">
+
+                        <div class="servi-shadow" style="height: 283px">
+
+                            <span class="fa fa-bullhorn icon" aria-hidden="true"></span>
+
+                            <h4><a href="/NewsPage?nid=${n.id}">${n.title}</a></h4>
 							<p>${n.inserttime}</p>
 						</div>
-					</div>
-				</c:forEach>
 
-<%--				<div class="col-xs-4 services-grids-w3l">--%>
-<%--					<div class="servi-shadow">--%>
-<%--						<span class="fa fa-certificate icon" aria-hidden="true"></span>--%>
-<%--						<h4>Certification</h4>--%>
-<%--						<p>Phasellus at placerat ante nulla adipiscing elit</p>--%>
-<%--					</div>--%>
-<%--				</div>--%>
-<%--				<div class="col-xs-4 services-grids-w3l">--%>
-<%--					<div class="servi-shadow">--%>
-<%--						<span class="fa fa-book icon" aria-hidden="true"></span>--%>
-<%--						<h4>Book Library</h4>--%>
-<%--						<p>Phasellus at placerat ante nulla adipiscing elit</p>--%>
-<%--					</div>--%>
-<%--				</div>--%>
-<%--				<div class="clearfix"> </div>--%>
-<%--			</div>--%>
-<%--			<div class="services-moksrow">--%>
-<%--				<div class="col-xs-4 services-grids-w3l">--%>
-<%--					<div class="servi-shadow">--%>
-<%--						<span class="fa fa-users icon" aria-hidden="true"></span>--%>
-<%--						<h4>Best Teachers</h4>--%>
-<%--						<p>Phasellus at placerat ante nulla adipiscing elit</p>--%>
-<%--					</div>--%>
-<%--				</div>--%>
-<%--				<div class="col-xs-4 services-grids-w3l">--%>
-<%--					<div class="servi-shadow">--%>
-<%--						<span class="fa fa-bus icon" aria-hidden="true"></span>--%>
-<%--						<h4>Transport Facility</h4>--%>
-<%--						<p>Phasellus at placerat ante nulla adipiscing elit</p>--%>
-<%--					</div>--%>
-<%--				</div>--%>
-<%--				<div class="col-xs-4 services-grids-w3l">--%>
-<%--					<div class="servi-shadow">--%>
-<%--						<span class="fa fa-laptop icon" aria-hidden="true"></span>--%>
-<%--						<h4>Excellent Lab</h4>--%>
-<%--						<p>Phasellus at placerat ante nulla adipiscing elit</p>--%>
-<%--					</div>--%>
-<%--				</div>--%>
+                </div>
+                 </c:forEach>
+
+            </div>
 				<div class="clearfix"> </div>
 			</div>
-		</div>
+
+
+        </div>
 	</div>
 	<!-- //services -->
 	<!-- news -->

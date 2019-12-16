@@ -201,7 +201,13 @@
                         <!--							<a href="#">Forgot password?</a>-->
                     </h6>
                 </div>
-                <input type="submit" value="发布">
+                <c:if test="${sessionScope.user!=null}">
+                    <input type="submit" value="发布">
+                </c:if>
+                <c:if test="${sessionScope.user==null}">
+                    <input type="submit"value="发布" disabled>
+                </c:if>
+
                 <!--					<button type="submit">login</button>-->
                 <div class="register-forming">
                     <!--						<p>To Register New Account &#45;&#45;-->
